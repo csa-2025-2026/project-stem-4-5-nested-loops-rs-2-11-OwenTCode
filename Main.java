@@ -4,17 +4,31 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Make sure to test your methods here
+    printNtimes("buh", 3);
+    printNums(10);
   }
 
   public static void printNTimes(String word, int N)
   {
-    // code solution here
+    for (int i = 0; i < word.length(); i++)
+    {
+      String current = word.substring(i,i+1);
+      for (int j = 0; j < N; j++)
+      {
+        System.out.println(current);
+      }
+    }
   }
 
   public static void printNums()
   {
-    // code solution here
+    for (int i = 10; i > 0; i--)
+    {
+      for (i > 9)
+      {
+        System.out.print(i);
+      }
+    }
   }
 
   public static void uprightNumberTriangle(int N)
